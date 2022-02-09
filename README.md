@@ -16,5 +16,5 @@ Client execution:
 ./client [server ip] [port number]
 
 Requirement:
-chilkat
-cryptopp
+*  chilkat
+*  cryptopp

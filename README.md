@@ -1,20 +1,33 @@
 # Secret File Server (Linux)
 
-Compile:
-Server compilation:
-g++ -o server server.cpp chilkat/lib/libchilkat-9.5.0.so -lresolv -lpthread cryptopp/libcryptopp.a
+This is a secret file server with TEA encryption
 
-Client compilation:
-g++ -o client client.cpp chilkat/lib/libchilkat-9.5.0.so -lresolv -lpthread cryptopp/libcryptopp.a
-
-
-Execute:
-Server execution:
-./server [port number]
-
-Client execution:
-./client [server ip] [port number]
-
-Requirement:
+## Requirement
 *  chilkat
 *  cryptopp
+
+## Run with linux terminal (g++)
+
+### Compile:
+
+#### Server
+```
+g++ -o server server.cpp chilkat/lib/libchilkat-9.5.0.so -lresolv -lpthread cryptopp/libcryptopp.a
+```
+
+#### Client
+```
+g++ -o client client.cpp chilkat/lib/libchilkat-9.5.0.so -lresolv -lpthread cryptopp/libcryptopp.a
+```
+
+### Run the program:
+
+#### Server
+```
+./server [port number]
+```
+
+#### Client
+```
+./client [server ip] [port number]
+```

@@ -1,6 +1,6 @@
 # Secret File Server (Linux)
 
-This is a secret file server with TEA encryption
+This is a secret file server with TEA encryption built in C++
 
 ## Requirement
 *  chilkat
